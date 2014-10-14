@@ -106,3 +106,17 @@ CakeLog::config('error', array(
 	'types' => array('warning', 'error', 'critical', 'alert', 'emergency'),
 	'file' => 'error',
 ));
+
+/*
+ * i18n plugin
+ * */
+// The 3 letters code for your default language
+define('DEFAULT_LANGUAGE', 'fre');
+
+//List of languages you want to support
+Configure::write('Config.languages', array('eng','fre'));
+
+// Load the plugin
+CakePlugin::load('I18n', array(
+    'routes' => true
+));

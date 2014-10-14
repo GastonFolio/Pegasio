@@ -30,4 +30,14 @@ App::uses('Helper', 'View');
  * @package       app.View.Helper
  */
 class AppHelper extends Helper {
+
+    /*
+     * Plugin i18n
+     * */
+    public function url($url = null, $full = false) {
+        if (is_array($url) && !array_key_exists('lang', $url)) {
+            $url['lang'] = Configure::read('Config.language');
+        }
+        return parent::url($url, $full);
+    }
 }
