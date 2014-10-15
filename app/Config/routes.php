@@ -26,13 +26,11 @@ App::uses('I18nRoute', 'I18n.Routing/Route');
  * its action called 'display', and we pass a param to select the view file
  * to use (in this case, /app/View/Pages/home.ctp)...
  */
-	Router::connect('/', array('controller' => 'pages', 'action' => 'display', 'home'),
-        array('routeClass' => 'I18nRoute'));
+	Router::connect('/', array('controller' => 'pages', 'action' => 'display', 'home'));
 /**
  * ...and connect the rest of 'Pages' controller's URLs.
  */
-	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'),
-        array('routeClass' => 'I18nRoute'));
+	Router::connect('/pages/*', array('controller' => 'pages', 'action' => 'display'));
 
 /**
  * Load all plugin routes. See the CakePlugin documentation on
@@ -45,3 +43,12 @@ App::uses('I18nRoute', 'I18n.Routing/Route');
  * the built-in default routes.
  */
 //	require CAKE . 'Config' . DS . 'routes.php';
+
+/*Users plugin **/
+Router::connect('/users', array('plugin' => 'users', 'controller' => 'users'));
+Router::connect('/users/index/*', array('plugin' => 'users', 'controller' => 'users'));
+Router::connect('/users/:action/*', array('plugin' => 'users', 'controller' => 'users'));
+Router::connect('/users/users/:action/*', array('plugin' => 'users', 'controller' => 'users'));
+Router::connect('/login/*', array('plugin' => 'users', 'controller' => 'users', 'action' => 'login'));
+Router::connect('/logout/*', array('plugin' => 'users', 'controller' => 'users', 'action' => 'logout'));
+Router::connect('/register/*', array('plugin' => 'users', 'controller' => 'users', 'action' => 'add'));

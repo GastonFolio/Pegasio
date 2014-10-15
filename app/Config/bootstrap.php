@@ -117,6 +117,20 @@ define('DEFAULT_LANGUAGE', 'fre');
 Configure::write('Config.languages', array('eng','fre'));
 
 // Load the plugin
-CakePlugin::load('I18n', array(
+CakePlugin::load('Users', array(
     'routes' => true
 ));
+
+//Users Role :
+Configure::write('Users.roles', array(
+    'admin' => 'Admin',
+    'registered' => 'Registered'
+));
+
+//Users configurations
+Configure::write('Users.allowRegistration', false);
+Configure::write('Users.disableDefaultAuth', true);
+Configure::write('Users.allowRegistration', false);
+Configure::write('Users.roles', true);
+Configure::write('Users.sendPassword', false);
+Configure::write('Users.emailConfig', false);
