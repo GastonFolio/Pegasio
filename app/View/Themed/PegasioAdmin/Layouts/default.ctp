@@ -205,19 +205,47 @@
             </div>
         </div>
         <!-- End .option-buttons -->
-        <!-- Start .sidebar-scrollarea -->
-        <div class="sidebar-scrollarea">
-            <h5 class="sidebar-title">Navigation</h5>
-            <ul id="sideNav" class="nav nav-pills nav-stacked">
-                <li><a href="index.html"><i class="im-screen"></i> <span class="txt">Dashboard</span></a>
-                </li>
-                <li><a href="charts.html"><i class="im-pie2"></i> <span class="txt">Charts</span><span class="label">10</span></a>
-                </li>
+      <!-- Start .sidebar-scrollarea -->
+                <div class="sidebar-scrollarea">
+                    <h5 class="sidebar-title">Navigation</h5>
+                    <ul id="sideNav" class="nav nav-pills nav-stacked">
+                        <li><a href="acceuil.html"><i class="im-screen"></i> <span class="txt">Tableau de Bord</span></a>
+                        </li>
+                        <li><a href="gest_dos.html"><i class="im-folder4"></i> <span class="txt">Gestion de dossiers</span></a>
+                        </li>
+                        <li><a href="gest_utilisateurs.html"><i class="im-users"></i> <span class="txt">Gestion d'utilisateurs</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="im-envelop2"></i> <span class="txt">Messages</span></a>
+                            <ul class="sub">
+                                <li><a href="email-inbox.html"><i class="im-arrow-right3"></i> <span class="txt">Boite de réception</span></a>
+                                </li>
+                                <li><a href="email-write.html"><i class="im-arrow-right3"></i> <span class="txt">Envoi message</span></a>
+                                </li>
+                                <li><a href="email-read.html"><i class="im-arrow-right3"></i> <span class="txt">Archives</span></a>
+                                </li>
+                            </ul>
+                        </li>
+                         <li><a href="stats.html"><i class="im-stats-up"></i> <span class="txt">Statistiques</span></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="im-envelop2"></i> <span class="txt">Activités</span></a>
+                            <ul class="sub">
+                                <li><a href="calendar.html"><i class="im-cogs"></i> <span class="txt">Agenda</span><span class="label"></span></a>
+                        </li>
+                                <li><a href="email-write.html"><i class="im-arrow-right3"></i> <span class="txt">Réunions</span></a>
+                                </li>
+                                <li><a href="email-read.html"><i class="im-arrow-right3"></i> <span class="txt">Taches</span></a>
+                                </li>
+                            </ul>
+                        </li>
 
-            </ul>
-            <div class="clearfix"></div>
-        </div>
-        <!-- End .sidebar-scrollarea -->
+                        <li><a href="parametres.html"><i class="im-cogs"></i> <span class="txt">Paramétres</span><span class="label"></span></a>
+                        </li>
+                        </ul>
+                    <div class="clearfix"></div>
+                </div>
+                <!-- End .sidebar-scrollarea -->
     </div>
     <!-- End .sidebar-inner -->
 </aside>

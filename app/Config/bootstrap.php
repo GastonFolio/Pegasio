@@ -117,9 +117,7 @@ define('DEFAULT_LANGUAGE', 'fre');
 Configure::write('Config.languages', array('eng','fre'));
 
 // Load the plugin
-CakePlugin::load('Users', array(
-    'routes' => true
-));
+CakePlugin::load('Users');
 
 //Users Role :
 Configure::write('Users.roles', array(
