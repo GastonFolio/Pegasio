@@ -479,5 +479,6 @@
 <!--<script src="assets/js/app.js"></script>-->
 <?php echo $this->Html->script('/assets/js/pages/blank'); ?>
 <!--<script src="assets/js/pages/blank.js"></script>-->
+<?php echo $this->fetch('scriptBottom'); ?>
 </body>
 </html>

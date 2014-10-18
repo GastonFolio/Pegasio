@@ -129,8 +129,7 @@ Configure::write('Users.roles', array(
 
 //Users configurations
 Configure::write('Users.allowRegistration', false);
-Configure::write('Users.disableDefaultAuth', true);
+Configure::write('Users.disableDefaultAuth', false);
+Configure::write('Users.disableDefaultAuth', false);
+Configure::write('Users.disableDefaultAuth', false);
 Configure::write('Users.allowRegistration', false);
-Configure::write('Users.roles', true);
-Configure::write('Users.sendPassword', false);
-Configure::write('Users.emailConfig', false);
